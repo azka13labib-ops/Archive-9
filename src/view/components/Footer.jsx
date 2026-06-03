@@ -36,21 +36,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Static Badge at the bottom */}
-      <motion.div
-        className="flex justify-center mt-8 sm:mt-12"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-      >
-        <div
-          className="bg-red-600 text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-bold tracking-widest shadow-[0_0_15px_rgba(220,38,38,0.6)]"
-          data-clickable
-        >
-          curated by AZK4
-        </div>
-      </motion.div>
     </footer>
       
       <CreditsRoll isOpen={isCreditsOpen} onClose={() => setIsCreditsOpen(false)} />

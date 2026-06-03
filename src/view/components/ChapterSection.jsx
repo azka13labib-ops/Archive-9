@@ -79,9 +79,6 @@ function ChapterCard({ chapter, index, onSelect }) {
           <motion.span layoutId={`chapter-subtitle-${chapter.number}`} className="text-[10px] sm:text-xs text-neutral-300 font-medium tracking-wide">
             {chapter.subtitle}
           </motion.span>
-          <motion.span layoutId={`chapter-netflix-${chapter.number}`} className="text-netflix-red text-[10px] sm:text-xs font-bold tracking-widest">
-            NETFLIX
-          </motion.span>
         </div>
 
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
@@ -200,9 +197,6 @@ export default function ChapterSection() {
                 <div className="absolute top-4 sm:top-6 left-4 sm:left-6 right-12 sm:right-16 flex justify-between z-10">
                   <motion.span layoutId={`chapter-subtitle-${selectedChapter.number}`} className="text-xs sm:text-sm md:text-base text-neutral-300 font-medium tracking-wide">
                     {selectedChapter.subtitle}
-                  </motion.span>
-                  <motion.span layoutId={`chapter-netflix-${selectedChapter.number}`} className="text-netflix-red text-xs sm:text-sm md:text-base font-bold tracking-widest">
-                    NETFLIX
                   </motion.span>
                 </div>
 
