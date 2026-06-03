@@ -34,7 +34,7 @@ const galleryDataByTab = {
     },
     { 
       image: "/praktek9/foto bersama/tka.jpeg", 
-      title: "EP 3: SEASON FINALE (LULUS)", 
+      title: "EP 3: SEASON FINAL (LULUS)", 
       description: "Momen menegangkan selama Tes Kemampuan Akademik (TKA) dan malam-malam begadang belajar bersama. Garis akhir perjuangan masa putih biru kami yang penuh haru." 
     }
   ],
