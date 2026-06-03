@@ -7,7 +7,6 @@ const creditData = [
     "Rohman", "Gofur", "Labib", "Ridwan", "Putra", "Danil", "Dwi", 
     "Nayah", "Santi", "Iip", "Mia", "Qonita", "Firoh", "Suci", "Mely"
   ]},
-  { role: "LOKASI SYUTING", names: ["MTs Raudlatul Ulum"] },
   { role: "SOUNDTRACK", names: ["Kenangan Terindah - Samsons", "Memories - Maroon 5"] },
   { role: "SPECIAL THANKS TO", names: ["Orang Tua Kami", "Sahabat Seperjuangan", "Bapak Ibu Guru"] },
 ];
