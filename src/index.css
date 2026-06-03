@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   GLOBAL RESETS & NETFLIX DARK THEME
+   ======================================== */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #141414;
+  color: #e5e5e5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  border: none;
+  display: block;
+}
+
+/* ========================================
+   CUSTOM CURSOR STYLES
+   ======================================== */
+
+.custom-cursor {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+/* ========================================
+   SCROLLBAR CUSTOMIZATION
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e50914;
+}
+
+/* ========================================
+   SELECTION COLOR
+   ======================================== */
+
+::selection {
+  background: rgba(229, 9, 20, 0.4);
+  color: #fff;
+}
+
+/* ========================================
+   MAGNETIC BUTTON HELPER
+   ======================================== */
+
+.magnetic-btn {
+  transition: transform 0.15s ease-out;
+}
+
+/* ========================================
+   GLASSMORPHISM GLOW
+   ======================================== */
+
+.glass-glow {
+  box-shadow:
+    0 0 30px rgba(229, 9, 20, 0.06),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================
+   RED BORDER CARD GLOW ON HOVER
+   ======================================== */
+
+.chapter-card-glow:hover {
+  box-shadow:
+    0 0 20px rgba(229, 9, 20, 0.3),
+    0 0 40px rgba(229, 9, 20, 0.1);
+}
+
+/* ========================================
+   THUMBNAIL RED GLOW ON HOVER
+   ======================================== */
+
+.thumb-glow:hover {
+  box-shadow:
+    0 0 15px rgba(229, 9, 20, 0.3),
+    0 0 30px rgba(229, 9, 20, 0.15);
+}
+
+/* ========================================
+   HIDE SCROLLBAR UTILITY
+   ======================================== */
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ========================================
+   SCROLLBAR-HIDE (MODAL)
+   ======================================== */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
