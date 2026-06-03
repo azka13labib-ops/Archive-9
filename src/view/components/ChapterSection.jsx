@@ -8,7 +8,8 @@ const chapters = [
     subtitle: "The Beginning of Our Journey",
     image: "/praktek9/foto bersama/WhatsApp Image 2026-04-29 at 22.33.40.jpeg",
     description: "Masa-masa awal di sekolah menengah. Awal dari persahabatan, penyesuaian diri dengan lingkungan baru, dan momen-momen pertama yang penuh keceriaan saat pertama kali kita bertemu di kelas 7.",
-    tags: ["Orientation", "New Friends", "The Beginning"]
+    tags: ["Orientation", "New Friends", "The Beginning"],
+    year: "2024"
   },
   {
     number: "08",
@@ -17,7 +18,8 @@ const chapters = [
     image: "/praktek9/foto bersama/WhatsApp Image 2026-04-29 at 22.33.41.jpeg",
     description:
       "Tahun kedua yang penuh warna. Ikatan pertemanan semakin kuat melalui berbagai kegiatan sekolah, canda tawa di kantin, dan kenangan indah yang mulai terbentuk semakin dalam di kelas 8.",
-    tags: ["Solidarity", "School Events", "Middle Journey"]
+    tags: ["Solidarity", "School Events", "Middle Journey"],
+    year: "2025"
   },
     {
     number: "09",
@@ -25,7 +27,8 @@ const chapters = [
     subtitle: "The Final Chapter",
     image: "/praktek9/foto bersama/IMG_20260429_043511_393.png",
     description: "Tahun terakhir yang penuh perjuangan dan kenangan. Mulai dari ujian praktek hingga persiapan kelulusan, setiap detik menjadi sangat berharga sebelum kita melangkah ke jenjang berikutnya.",
-    tags: ["Graduation", "Final Exams", "Unforgettable"]
+    tags: ["Graduation", "Final Exams", "Unforgettable"],
+    year: "2026"
   },
 ];
 
@@ -224,7 +227,7 @@ export default function ChapterSection() {
                 <div className="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm md:text-base text-neutral-400 mb-6 sm:mb-8 font-semibold tracking-wide items-center">
                   <span className="text-[#46d369] font-bold">100% Match</span>
                   <span className="text-netflix-red">Chapter {selectedChapter.number}</span>
-                  <span>2023</span>
+                  <span>{selectedChapter.year}</span>
                   <span className="border border-neutral-600 px-1.5 sm:px-2 py-0.5 rounded-sm text-[10px] sm:text-xs">HD</span>
                 </div>
 
