@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import CreditsRoll from "./CreditsRoll";
 
 export default function Footer() {

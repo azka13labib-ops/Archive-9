@@ -235,28 +235,6 @@ export default function HeroSection() {
                   </div>
                 </motion.div>
 
-                {/* ── GALERI HORIZONTAL (CUPLIKAN KENANGAN) ── */}
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.5 }} className="mb-4">
-                  <div className="flex items-center gap-2 mb-6">
-                    <span className="w-1 sm:w-1.5 h-5 sm:h-6 bg-[#e50914] rounded-full block"></span>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white tracking-wide">
-                      Cuplikan <span className="text-neutral-500 font-normal">/ Memori</span>
-                    </h3>
-                  </div>
-                  
-                  {/* Container scroll ke samping */}
-                  <div className="flex gap-4 overflow-x-auto pb-6 scrollbar-hide snap-x">
-                    {[1, 2, 3, 4, 5, 6].map((item) => (
-                      <div key={item} className="min-w-[260px] sm:min-w-[320px] h-40 sm:h-48 rounded-xl bg-neutral-800 border border-neutral-700 overflow-hidden relative group snap-center flex-shrink-0 cursor-pointer">
-                        <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-[#141414] group-hover:scale-110 transition-transform duration-700"></div>
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/10 transition-colors duration-300">
-                          <span className="text-white/30 group-hover:text-white font-serif tracking-[0.2em] italic text-sm transition-colors duration-300">MEMORI 0{item}</span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-
               </div>
             </motion.div>
           </motion.div>
