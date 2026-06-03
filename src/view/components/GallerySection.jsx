@@ -5,30 +5,54 @@ const tabs = ["ABOUT US", "EPISODE", "ACHIEVEMENT", "MORE"];
 
 const galleryDataByTab = {
   "ABOUT US": [
-    { image: "/images/group_hero.jpg", title: "OUR CLASS", description: "Foto bersama seluruh anggota kelas kita tercinta dengan penuh kebanggaan." },
-    { image: "/images/thumb7.jpg", title: "MORNING FLAG", description: "Upacara bendera setiap hari Senin yang penuh kedisiplinan dan rasa nasionalisme." },
-    { image: "/images/thumb5.jpg", title: "MUSEUM TRIP", description: "Belajar sejarah langsung di museum nasional, menambah wawasan bersama-sama." }
+    { 
+      image: "/images/group_hero.jpg", 
+      title: "SINOPSIS: ANGKATAN 2026", 
+      description: "Kisah persahabatan 3 tahun di MTs Raudlatul Ulum. Berawal dari bangku kelas 7 yang canggung di tahun 2024, tumbuh bersama di kelas 8, hingga lulus dengan kenangan indah di kelas 9 pada tahun 2026." 
+    },
+    { 
+      image: "/images/thumb7.jpg", 
+      title: "KILAS BALIK 3 SEASON", 
+      description: "Merangkum setiap tawa, tangis, tugas kelompok yang dikerjakan mendadak, hingga coretan konyol di papan tulis. Tiga season perjalanan sekolah yang tidak akan pernah diproduksi ulang." 
+    },
+    { 
+      image: "/images/thumb5.jpg", 
+      title: "SET UTAMA: RUANG KELAS", 
+      description: "Tempat segala drama, candaan di jam kosong, dan tidur siang tersembunyi terjadi. Saksi bisu perjuangan kami meraih masa depan bersama." 
+    }
   ],
   "EPISODE": [
-    { image: "/praktek9/praktek/WhatsApp Image 2026-04-27 at 09.51.07.jpeg", title: "Praktek Pastel Basah", description: "Kisah di balik apron dan adonan tepung. Ujian praktek membuat pastel basah yang penuh drama—mulai dari berebut alat, isian yang tumpah, hingga perjuangan melipat pinggiran pastel agar tidak bocor. Sebuah mahakarya kuliner penuh tawa dari kelas kami." },
-    { image: "/praktek9/foto bersama/tka.jpeg", title: "Tes Kemampuan Akademik", description: "Momen begadang semalaman dan saling tanya jawaban sebelum masuk kelas. Ujian ini bukan sekadar deretan soal yang harus dijawab, tapi tentang garis akhir perjuangan kita di masa putih biru." },
-    { image: "/images/thumb8.jpg", title: "FAREWELL PARTY", description: "Pesta perpisahan yang penuh canda tawa, haru, dan kenangan tak terlupakan." }
+    { 
+      image: "/praktek9/foto bersama/WhatsApp Image 2026-04-29 at 22.33.40.jpeg", 
+      title: "EP 1: PERTEMUAN PERTAMA", 
+      description: "Pertemuan pertama kita di kelas 7 pada tahun 2024. Masih saling diam, duduk berjauhan, pemalu, dan belum tahu kalau kita akan menjadi sahabat sedekat nadi." 
+    },
+    { 
+      image: "/praktek9/praktek/WhatsApp Image 2026-04-27 at 09.51.07.jpeg", 
+      title: "EP 2: DRAMA PASTEL BASAH", 
+      description: "Ujian praktek membuat pastel basah yang penuh kekacauan. Mulai dari rebutan spatula, adonan yang robek, hingga isian pastel yang luber. Namun, tawa kita saat memasak membuatnya tiada duanya." 
+    },
+    { 
+      image: "/praktek9/foto bersama/tka.jpeg", 
+      title: "EP 3: SEASON FINALE (LULUS)", 
+      description: "Momen menegangkan selama Tes Kemampuan Akademik (TKA) dan malam-malam begadang belajar bersama. Garis akhir perjuangan masa putih biru kami yang penuh haru." 
+    }
   ],
   "ACHIEVEMENT": [
     {
       image: "/images/thumb1.jpg",
-      title: "DRAMA",
-      description: "ini praktek bahasa indonesia kita ngangkat kisah legenda indonesia semuanya kompak bekerja sama"
-    },
-    {
-      image: "/images/thumb2.jpg",
-      title: "FOTO STUDIO",
-      description: "Ini moment 2021 pas kelas 11 dulu seneng banget bisa foto studio satu kelas harganya murah tapi kenangannya yang mahal"
+      title: "PIALA SENI PERAN",
+      description: "Kekompakan kelas saat ujian praktek Bahasa Indonesia mementaskan cerita legenda nusantara. Dari sutradara dadakan sampai pemeran pembantu, semua tampil all-out!"
     },
     {
       image: "/images/thumb3.jpg",
-      title: "NO BACKPACK DAY",
-      description: "Marhas kreatif banget dulu ngadain acara no backpack day di sekolah semua orang diwajibkan buat gak bawa tas punggung kesekolah namun digantikan oleh barang barang random yang mereka punya"
+      title: "BEST CREATIVE: NO BACKPACK DAY",
+      description: "Kreativitas tingkat tinggi saat dilarang membawa tas punggung ke sekolah. Digantikan dengan ember, rice cooker, jemuran, hingga kantong belanja random."
+    },
+    {
+      image: "/images/thumb2.jpg",
+      title: "PIALA NOSTALGIA BERSAMA",
+      description: "Foto studio bersama yang sederhana namun bernilai tinggi. Bukti fisik terindah bahwa kita pernah tertawa lepas bersama di bawah satu atap sekolah yang sama."
     },
   ],
   "MORE": [
