@@ -6,17 +6,14 @@ const tabs = ["ABOUT US", "EPISODE", "ACHIEVEMENT", "MORE"];
 const galleryDataByTab = {
   "ABOUT US": [
     { 
-      image: "/images/group_hero.jpg", 
       title: "SINOPSIS: ANGKATAN 2026", 
       description: "Kisah persahabatan 3 tahun di MTs Raudlatul Ulum. Berawal dari bangku kelas 7 yang canggung di tahun 2024, tumbuh bersama di kelas 8, hingga lulus dengan kenangan indah di kelas 9 pada tahun 2026." 
     },
     { 
-      image: "/images/thumb7.jpg", 
       title: "KILAS BALIK 3 SEASON", 
       description: "Merangkum setiap tawa, tangis, tugas kelompok yang dikerjakan mendadak, hingga coretan konyol di papan tulis. Tiga season perjalanan sekolah yang tidak akan pernah diproduksi ulang." 
     },
     { 
-      image: "/images/thumb5.jpg", 
       title: "SET UTAMA: RUANG KELAS", 
       description: "Tempat segala drama, candaan di jam kosong, dan tidur siang tersembunyi terjadi. Saksi bisu perjuangan kami meraih masa depan bersama." 
     }
@@ -40,17 +37,14 @@ const galleryDataByTab = {
   ],
   "ACHIEVEMENT": [
     {
-      image: "/images/thumb1.jpg",
       title: "PIALA SENI PERAN",
       description: "Kekompakan kelas saat ujian praktek Bahasa Indonesia mementaskan cerita legenda nusantara. Dari sutradara dadakan sampai pemeran pembantu, semua tampil all-out!"
     },
     {
-      image: "/images/thumb3.jpg",
       title: "BEST CREATIVE: NO BACKPACK DAY",
       description: "Kreativitas tingkat tinggi saat dilarang membawa tas punggung ke sekolah. Digantikan dengan ember, rice cooker, jemuran, hingga kantong belanja random."
     },
     {
-      image: "/images/thumb2.jpg",
       title: "PIALA NOSTALGIA BERSAMA",
       description: "Foto studio bersama yang sederhana namun bernilai tinggi. Bukti fisik terindah bahwa kita pernah tertawa lepas bersama di bawah satu atap sekolah yang sama."
     },
@@ -149,28 +143,30 @@ export default function GallerySection() {
           ) : (
             currentData.map((item, index) => (
               <div key={index} className="flex flex-col items-center text-center">
-                <div className="w-full aspect-[4/3] rounded-md sm:rounded-lg overflow-hidden mb-4 sm:mb-6 bg-neutral-800 shadow-lg border border-white/5 relative group">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                    loading="lazy"
-                  />
-                  {/* Download Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 sm:p-4 pointer-events-none">
-                    <a 
-                      href={item.image} 
-                      download 
-                      className="bg-black/30 hover:bg-red-600 text-white p-2 sm:p-2.5 rounded-full backdrop-blur-sm transition-all duration-300 pointer-events-auto transform translate-y-4 group-hover:translate-y-0 shadow-lg"
-                      onClick={(e) => e.stopPropagation()}
-                      title="Download Image"
-                    >
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                      </svg>
-                    </a>
+                {item.image && (
+                  <div className="w-full aspect-[4/3] rounded-md sm:rounded-lg overflow-hidden mb-4 sm:mb-6 bg-neutral-800 shadow-lg border border-white/5 relative group">
+                    <img 
+                      src={item.image} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                      loading="lazy"
+                    />
+                    {/* Download Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 sm:p-4 pointer-events-none">
+                      <a 
+                        href={item.image} 
+                        download 
+                        className="bg-black/30 hover:bg-red-600 text-white p-2 sm:p-2.5 rounded-full backdrop-blur-sm transition-all duration-300 pointer-events-auto transform translate-y-4 group-hover:translate-y-0 shadow-lg"
+                        onClick={(e) => e.stopPropagation()}
+                        title="Download Image"
+                      >
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                </div>
+                )}
                 <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 sm:mb-3 uppercase tracking-wider">{item.title}</h3>
                 <p className="text-xs sm:text-sm md:text-base text-neutral-300 leading-relaxed max-w-sm">
                   {item.description}
